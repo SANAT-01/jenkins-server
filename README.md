@@ -124,3 +124,5 @@ docker volume rm jenkins-server_jenkins_data   # wipe all Jenkins data (fresh st
 
 - Rebuilding the image (`docker build ...`) again later will pull the latest LTS release since the base tag `lts-jdk17` is a floating tag, not pinned to a specific version. Pin to an explicit tag (e.g. `jenkins/jenkins:2.541.3-lts-jdk17`) if reproducible builds matter more than always having the newest LTS.
 - Jenkins has full control of the VPS's Docker daemon through the socket mount — treat Jenkins credentials/access with the same care as root access to the server.
+
+References - https://github.com/devopsjourney1/jenkins-101
